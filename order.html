@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRIZA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <h1>🔥 TRIZA</h1>
+    <p>Cloud Kitchen • Fast Delivery</p>
+</header>
+
+<!-- CATEGORY -->
+
+<div class="category">Biryani & Rice</div>
+<div class="menu-grid">
+    <div class="card">
+        <h3>Chicken Biryani</h3>
+        <p>₹150</p>
+        <div class="qty">
+            <button onclick="changeQty('Chicken Biryani',150,-1)">-</button>
+            <span id="Chicken Biryani">0</span>
+            <button onclick="changeQty('Chicken Biryani',150,1)">+</button>
+        </div>
+    </div>
+
+```
+<div class="card">
+    <h3>Chicken Fried Rice</h3>
+    <p>₹130</p>
+    <div class="qty">
+        <button onclick="changeQty('Chicken Fried Rice',130,-1)">-</button>
+        <span id="Chicken Fried Rice">0</span>
+        <button onclick="changeQty('Chicken Fried Rice',130,1)">+</button>
+    </div>
+</div>
+```
+
+</div>
+
+<div class="category">Snacks</div>
+<div class="menu-grid">
+    <div class="card">
+        <h3>Chicken 65</h3>
+        <p>₹120</p>
+        <div class="qty">
+            <button onclick="changeQty('Chicken 65',120,-1)">-</button>
+            <span id="Chicken 65">0</span>
+            <button onclick="changeQty('Chicken 65',120,1)">+</button>
+        </div>
+    </div>
+
+```
+<div class="card">
+    <h3>Crispy Chicken</h3>
+    <p>₹160</p>
+    <div class="qty">
+        <button onclick="changeQty('Crispy Chicken',160,-1)">-</button>
+        <span id="Crispy Chicken">0</span>
+        <button onclick="changeQty('Crispy Chicken',160,1)">+</button>
+    </div>
+</div>
+```
+
+</div>
+
+<div class="category">Wraps & Burgers</div>
+<div class="menu-grid">
+    <div class="card">
+        <h3>Chicken Wrap</h3>
+        <p>₹100</p>
+        <div class="qty">
+            <button onclick="changeQty('Chicken Wrap',100,-1)">-</button>
+            <span id="Chicken Wrap">0</span>
+            <button onclick="changeQty('Chicken Wrap',100,1)">+</button>
+        </div>
+    </div>
+
+```
+<div class="card">
+    <h3>Paneer Burger</h3>
+    <p>₹100</p>
+    <div class="qty">
+        <button onclick="changeQty('Paneer Burger',100,-1)">-</button>
+        <span id="Paneer Burger">0</span>
+        <button onclick="changeQty('Paneer Burger',100,1)">+</button>
+    </div>
+</div>
+```
+
+</div>
+
+<!-- FLOATING CART -->
+
+<div class="cart-bar" onclick="openCart()">
+    🛒 View Cart • ₹<span id="total">0</span>
+</div>
+
+<!-- CART POPUP -->
+
+<div class="cart-popup" id="cartPopup">
+    <h2>Your Order</h2>
+    <ul id="cartList"></ul>
+
+```
+<input type="text" id="name" placeholder="Your Name">
+<input type="text" id="phone" placeholder="Phone Number">
+
+<button onclick="orderWhatsApp()">Place Order</button>
+<button class="close" onclick="closeCart()">Close</button>
+```
+
+</div>
+
+<script src="order.js"></script>
+
+</body>
+</html>
