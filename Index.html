@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>TRIZA Billing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>TRIZA Cloud Kitchen Billing</h1>
+
+<div class="container">
+
+```
+<h2>Create Order</h2>
+
+<select id="item">
+    <option>Chicken Biryani - 150</option>
+    <option>Chicken 65 - 120</option>
+    <option>Chicken Fried Rice - 130</option>
+    <option>Chicken Fried Noodles - 130</option>
+    <option>Crispy Fried Chicken - 160</option>
+    <option>Chicken Wrap - 100</option>
+    <option>Paneer Wrap - 90</option>
+    <option>Veg Wrap - 80</option>
+    <option>Chicken Burger - 120</option>
+    <option>Paneer Burger - 100</option>
+    <option>Veg Burger - 80</option>
+    <option>Chicken Sandwich - 110</option>
+    <option>Paneer Sandwich - 90</option>
+    <option>Veg Sandwich - 70</option>
+    <option>Milkshake - 80</option>
+    <option>Pizza - 150</option>
+</select>
+
+<input type="number" id="qty" placeholder="Qty">
+
+<button onclick="addItem()">Add</button>
+
+<h3>Bill</h3>
+<ul id="billList"></ul>
+<h2>Total: ₹<span id="total">0</span></h2>
+
+<button onclick="saveOrder()">Save Order</button>
+<button onclick="exportCSV()">Export CSV</button>
+```
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
